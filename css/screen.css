@@ -2,6 +2,24 @@
   #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: "ClearSans";
+    font-weight: 200;
+    src: url("../fonts/ClearSans-Light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ClearSans";
+    font-weight: 400;
+    src: url("../fonts/ClearSans-Regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ClearSans";
+    font-weight: 600;
+    src: url("../fonts/ClearSans-Medium-webfont.woff") format("woff");
+}
+
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -13,12 +31,16 @@
 */
 
 html {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Helvetica, arial, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 200;
+    font-family: "ClearSans", Helvetica, arial, sans-serif;
+    color: white;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(to bottom right, #0A257D, #061649);
+    background-attachment: fixed;
 }
 
 *,
@@ -364,6 +386,20 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
+/*
+    Component: Logo
+    ---
+    Website main logo
+*/
+
+.c-logo {
+    height: 32px;
+}
+
+.c-logo__symbol {
+    height: 100%;
+}
 
 /*------------------------------------*\
   #UTILITIES
